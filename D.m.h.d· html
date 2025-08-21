@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D.M.H.D.BANDARA - Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #f5f7fa, #c3cfe2); color: #333; transition: background 0.5s; }
+    header { text-align: center; padding: 60px 20px; background: linear-gradient(90deg, #1e90ff, #ff7f50); color: white; position: relative; overflow: hidden; }
+    header img { width: 160px; height: 160px; border-radius: 50%; border: 4px solid white; transition: transform 0.5s; }
+    header img:hover { transform: scale(1.1) rotate(5deg); }
+    h1 { margin: 20px 0 10px; font-size: 2.5rem; animation: fadeIn 1s ease forwards; }
+    h3 { margin-bottom: 20px; font-weight: 600; color: #f0e130; }
+    p { max-width: 700px; margin: 10px auto; line-height: 1.6; font-size: 1.1rem; animation: fadeIn 2s ease forwards; }
+
+    @keyframes fadeIn { from {opacity:0; transform: translateY(20px);} to {opacity:1; transform: translateY(0);} }
+
+    section { padding: 60px 20px; }
+    h2 { text-align: center; font-size: 2rem; margin-bottom: 30px; color: #ff4500; }
+
+    .skills, .projects, .contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .skill, .project { background: white; padding: 20px 25px; border-radius: 15px; box-shadow: 0 8px 15px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+    .skill:hover, .project:hover { transform: translateY(-5px); box-shadow: 0 15px 25px rgba(0,0,0,0.2); }
+    .skill { background: linear-gradient(135deg, #ff9a9e, #fad0c4); color: #fff; font-weight: 600; }
+    .project a { text-decoration: none; color: #1e90ff; font-weight: 600; }
+    .project a:hover { color: #ff4500; }
+
+    .contact-item { background: #1e90ff; color: white; padding: 15px 20px; border-radius: 12px; transition: transform 0.3s, background 0.3s; }
+    .contact-item:hover { transform: translateY(-5px); background: #ff7f50; }
+
+    footer { text-align: center; padding: 25px; margin-top: 50px; background: #222; color: white; }
+
+    /* Floating background animation */
+    header::before, header::after {
+      content: '';
+      position: absolute;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      opacity: 0.3;
+      animation: float 6s ease-in-out infinite;
+    }
+    header::before { background: #ff69b4; top: -50px; left: -50px; }
+    header::after { background: #00ffff; bottom: -50px; right: -50px; animation-delay: 3s; }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(20px); } }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="profile.jpg" alt="D.M.H.D.BANDARA">
+    <h1>D.M.H.D.BANDARA</h1>
+    <h3>Computer Science Student</h3>
+    <p>I’m a Computer Science student with a strong interest in programming and technology. I enjoy learning new skills, building small projects, and exploring how software can solve real-world problems. My goal is to grow as a developer and contribute to meaningful projects.</p>
+  </header>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">C</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project One</h3>
+        <p>A small project using HTML and CSS.</p>
+        <a href="#">View Code</a>
+      </div>
+      <div class="project">
+        <h3>Project Two</h3>
+        <p>A Python program for beginners.</p>
+        <a href="#">View Code</a>
+      </div>
+      <div class="project">
+        <h3>Project Three</h3>
+        <p>A basic JavaScript interactive web page.</p>
+        <a href="#">View Code</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <div class="contact-item">Email: <a href="mailto:hashendilshan4@gamil.com" style="color:white; text-decoration:none;">hashendilshan4@gamil.com</a></div>
+      <div class="contact-item">GitHub: <a href="https://github.com/dilacode007" target="_blank" style="color:white; text-decoration:none;">dilacode007</a></div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 D.M.H.D.BANDARA. All rights reserved.
+  </footer>
+
+</body>
+</html>
